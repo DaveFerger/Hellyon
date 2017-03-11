@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
+use dosamigos\chartjs\ChartJs;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Pots */
@@ -42,5 +43,138 @@ $this->params['breadcrumbs'][] = $this->title;
             'pot_name',
         ],
     ]) ?>
+
+    <?php
+        echo ChartJs::widget([
+            'type' => 'line',
+            'options' => [
+                'height' => 200,
+                'width' => 1500,
+            ],
+            'data' => [
+                'labels' => ["Monday", "Thusday", "Wendnesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                'datasets' => [
+                    [
+                        'label'=> 'Light',
+                        'backgroundColor' => "rgba(0, 255, 0, 1)",
+                        'borderColor' => "rgba(179,181,198,1)",
+                        'pointBackgroundColor' => "rgba(179,181,198,1)",
+                        'pointBorderColor' => "#fff",
+                        'pointHoverBackgroundColor' => "#fff",
+                        'pointHoverBorderColor' => "rgba(179,181,198,1)",
+                        'data' => [10, 0, 30, 0, 50, 0, 70]
+                    ]
+                ]
+            ],
+        ]);
+        echo ChartJs::widget([
+            'type' => 'line',
+            'options' => [
+                'height' => 200,
+                'width' => 1500,
+            ],
+            'data' => [
+                'labels' => ["Monday", "Thusday", "Wendnesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                'datasets' => [
+                    [
+                        'label'=> 'Waterlevel',
+                        'backgroundColor' => "rgba(0, 0, 255, 1)",
+                        'borderColor' => "rgba(179,181,198,1)",
+                        'pointBackgroundColor' => "rgba(179,181,198,1)",
+                        'pointBorderColor' => "#fff",
+                        'pointHoverBackgroundColor' => "#fff",
+                        'pointHoverBorderColor' => "rgba(179,181,198,1)",
+                        'data' => [10, 20, 30, 40, 50, 60, 70]
+                    ]
+                ]
+            ]
+        ]);echo ChartJs::widget([
+            'type' => 'line',
+            'options' => [
+                'height' => 200,
+                'width' => 1500,
+            ],
+            'data' => [
+                'labels' => ["Monday", "Thusday", "Wendnesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                'datasets' => [
+                    [
+                        'label'=> 'Tempature',
+                        'backgroundColor' => "rgba(255, 0, 0, 1)",
+                        'borderColor' => "rgba(179,181,198,1)",
+                        'pointBackgroundColor' => "rgba(179,181,198,1)",
+                        'pointBorderColor' => "#fff",
+                        'pointHoverBackgroundColor' => "#fff",
+                        'pointHoverBorderColor' => "rgba(179,181,198,1)",
+                        'data' => [10, 20, 30, 40, 50, 60, 70]
+                    ]
+                ]
+            ]
+        ]);echo ChartJs::widget([
+            'type' => 'line',
+            'options' => [
+                'height' => 200,
+                'width' => 1500,
+            ],
+            'data' => [
+                'labels' => ["Monday", "Thusday", "Wendnesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                'datasets' => [
+                    [
+                        'label'=> 'Pressure',
+                        'backgroundColor' => "rgba(255, 0, 255, 1)",
+                        'borderColor' => "rgba(179,181,198,1)",
+                        'pointBackgroundColor' => "rgba(179,181,198,1)",
+                        'pointBorderColor' => "#fff",
+                        'pointHoverBackgroundColor' => "#fff",
+                        'pointHoverBorderColor' => "rgba(179,181,198,1)",
+                        'data' => [10, 20, 30, 40, 50, 60, 70]
+                    ]
+                ]
+            ]
+        ]);echo ChartJs::widget([
+            'type' => 'line',
+            'options' => [
+                'height' => 200,
+                'width' => 1500,
+            ],
+            'data' => [
+                'labels' => ["Monday", "Thusday", "Wendnesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                'datasets' => [
+                    [
+                        'label'=> 'Moisture',
+                        'backgroundColor' => "rgba(255, 255, 0, 1)",
+                        'borderColor' => "rgba(179,181,198,1)",
+                        'pointBackgroundColor' => "rgba(179,181,198,1)",
+                        'pointBorderColor' => "#fff",
+                        'pointHoverBackgroundColor' => "#fff",
+                        'pointHoverBorderColor' => "rgba(179,181,198,1)",
+                        'data' => [10, 20, 30, 40, 50, 60, 70]
+                    ]
+                ]
+            ]
+        ]);echo ChartJs::widget([
+            'type' => 'line',
+            'options' => [
+                'height' => 200,
+                'width' => 1500,
+            ],
+            'data' => [
+                'labels' => ["Monday", "Thusday", "Wendnesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                'datasets' => [
+                    [
+                        'label'=> 'Humidity',
+                        'backgroundColor' => "rgb(139,69,19)",
+                        'borderColor' => "rgba(179,181,198,1)",
+                        'pointBackgroundColor' => "rgba(179,181,198,1)",
+                        'pointBorderColor' => "#fff",
+                        'pointHoverBackgroundColor' => "#fff",
+                        'pointHoverBorderColor' => "rgba(179,181,198,1)",
+                        'data' => [10, 20, 30, 40, 50, 60, 70]
+                    ]
+                ]
+            ]
+        ]);
+
+    ?>
+
 
 </div>
