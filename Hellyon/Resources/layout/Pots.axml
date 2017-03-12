@@ -6,52 +6,62 @@
     android:minWidth="25px"
     android:minHeight="25px"
     android:background="#00aeef">
-    <ImageView
-        android:src="@drawable/hellyon_logo"
-        android:layout_width="match_parent"
-        android:layout_height="300.0dp"
-        android:id="@+id/imageView1" />
     <TextView
-        android:text="@string/Username"
+        android:text="@string/Actions"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@android:color/white"
         android:gravity="center"
         android:paddingTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/userNameText" />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:paddingTop="10dp"
-        android:textColor="@android:color/white"
-        android:inputType="text"
-        android:id="@+id/userName" />
-    <TextView
-        android:text="@string/Password"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@android:color/white"
-        android:gravity="center"
-        android:paddingTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/passwordText" />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@android:color/white"
-        android:gravity="center"
-        android:paddingTop="10dp"
-        android:inputType="textPassword"
-        android:id="@+id/password"
-        android:password="true" />
+        android:id="@+id/actionsText" />
     <Button
-        android:text="@string/Login"
+        android:text="@string/NewPot"
         android:background="@drawable/blue_button"
         android:textColor="@android:color/white"
         android:paddingTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/loginButton" />
+        android:id="@+id/newPotButton" />
+    <TextView
+        android:text="@string/ActivePots"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activePotsText" />
+    <Button
+        android:text="@string/Pot1"
+        android:background="@drawable/blue_button"
+        android:textColor="@android:color/white"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pot2Button" />
+    <Button
+        android:text="@string/Pot2"
+        android:background="@drawable/blue_button"
+        android:textColor="@android:color/white"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pot2Button" />
+    <Button
+        android:text="@string/Pot3"
+        android:background="@drawable/blue_button"
+        android:textColor="@android:color/white"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pot2Button" />
+    <Button
+        android:text="@string/Pot4"
+        android:background="@drawable/blue_button"
+        android:textColor="@android:color/white"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pot2Button" />
 </LinearLayout>

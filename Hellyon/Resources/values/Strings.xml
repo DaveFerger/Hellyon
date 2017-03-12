@@ -2,7 +2,14 @@
 <resources>
     <string name="Hello">Hello World, Click Me!</string>
     <string name="ApplicationName">Hellyon</string>
-  <string name="Username">Felhasználónév</string>
-  <string name="Password">Jelszó</string>
-  <string name="Login">Belép</string>
+    <string name="Username">Felhasználónév</string>
+    <string name="Password">Jelszó</string>
+    <string name="Login">Belép</string>
+  <string name="Actions">Műveletek</string>
+  <string name="NewPot">Új hozzáadása</string>
+  <string name="ActivePots">Aktív kaspók</string>
+  <string name="Pot1">1. cserép</string>
+  <string name="Pot2">2. cserép</string>
+  <string name="Pot3">3. cserép</string>
+  <string name="Pot4">4. cserép</string>
 </resources>
