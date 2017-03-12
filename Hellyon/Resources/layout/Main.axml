@@ -3,5 +3,48 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="#00aeef">
+    <ImageView
+        android:src="@drawable/hellyon_logo"
+        android:layout_width="match_parent"
+        android:layout_height="234.0dp"
+        android:id="@+id/imageView1" />
+    <TextView
+        android:text="@string/Username"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userNameText" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:inputType="text"
+        android:id="@+id/userName" />
+    <TextView
+        android:text="@string/Password"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordText" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:inputType="textPassword"
+        android:id="@+id/password" />
+    <Button
+        android:text="@string/Login"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginButton" />
 </LinearLayout>

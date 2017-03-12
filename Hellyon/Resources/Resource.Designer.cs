@@ -45,7 +45,13 @@ namespace Hellyon
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Icon = 2130837504;
+			public const int hellyon_logo = 2130837504;
+			
+			// aapt resource value: 0x7f020001
+			public const int hellyon_logo_nobg = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int Icon = 2130837506;
 			
 			static Drawable()
 			{
@@ -53,6 +59,37 @@ namespace Hellyon
 			}
 			
 			private Drawable()
+			{
+			}
+		}
+		
+		public partial class Id
+		{
+			
+			// aapt resource value: 0x7f050000
+			public const int imageView1 = 2131034112;
+			
+			// aapt resource value: 0x7f050005
+			public const int loginButton = 2131034117;
+			
+			// aapt resource value: 0x7f050004
+			public const int password = 2131034116;
+			
+			// aapt resource value: 0x7f050003
+			public const int passwordText = 2131034115;
+			
+			// aapt resource value: 0x7f050002
+			public const int userName = 2131034114;
+			
+			// aapt resource value: 0x7f050001
+			public const int userNameText = 2131034113;
+			
+			static Id()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Id()
 			{
 			}
 		}
@@ -81,6 +118,15 @@ namespace Hellyon
 			
 			// aapt resource value: 0x7f040000
 			public const int Hello = 2130968576;
+			
+			// aapt resource value: 0x7f040004
+			public const int Login = 2130968580;
+			
+			// aapt resource value: 0x7f040003
+			public const int Password = 2130968579;
+			
+			// aapt resource value: 0x7f040002
+			public const int Username = 2130968578;
 			
 			static String()
 			{

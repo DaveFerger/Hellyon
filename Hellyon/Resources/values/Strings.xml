@@ -2,4 +2,7 @@
 <resources>
     <string name="Hello">Hello World, Click Me!</string>
     <string name="ApplicationName">Hellyon</string>
+  <string name="Username">Felhasználónév</string>
+  <string name="Password">Jelszó</string>
+  <string name="Login">Belép</string>
 </resources>
