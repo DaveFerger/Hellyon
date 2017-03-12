@@ -6,7 +6,7 @@ using Android.Content;
 
 namespace Hellyon
 {
-    [Activity(Label = "Hellyon", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "Hellyon")]
     public class MainActivity : Activity
     {
         protected override void OnCreate(Bundle bundle)

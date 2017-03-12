@@ -56,6 +56,9 @@ namespace Hellyon
 			// aapt resource value: 0x7f020003
 			public const int Icon = 2130837507;
 			
+			// aapt resource value: 0x7f020004
+			public const int splash_screen = 2130837508;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -181,7 +184,10 @@ namespace Hellyon
 		{
 			
 			// aapt resource value: 0x7f050000
-			public const int button_text = 2131034112;
+			public const int Theme_Splash = 2131034112;
+			
+			// aapt resource value: 0x7f050001
+			public const int button_text = 2131034113;
 			
 			static Style()
 			{
