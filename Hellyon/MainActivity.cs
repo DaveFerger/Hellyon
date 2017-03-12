@@ -13,6 +13,9 @@ namespace Hellyon
 
             // Set our view from the "main" layout resource
             // SetContentView (Resource.Layout.Main);
+
+            Toast.MakeText(this, "Valammi", ToastLength.Long);
+
         }
     }
 }
