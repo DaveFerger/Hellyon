@@ -39,7 +39,7 @@
         android:paddingTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/pot2Button" />
+        android:id="@+id/pot1Button" />
     <Button
         android:text="@string/Pot2"
         android:background="@drawable/blue_button"
@@ -55,7 +55,7 @@
         android:paddingTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/pot2Button" />
+        android:id="@+id/pot3Button" />
     <Button
         android:text="@string/Pot4"
         android:background="@drawable/blue_button"
@@ -63,5 +63,5 @@
         android:paddingTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/pot2Button" />
+        android:id="@+id/pot4Button" />
 </LinearLayout>

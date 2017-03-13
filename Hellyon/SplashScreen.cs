@@ -23,7 +23,7 @@ namespace Hellyon
             // Create your application here
 
             Thread.Sleep(4000);
-            StartActivity(typeof(MainActivity));
+            StartActivity(typeof(MainPage));
         }
     }
 }

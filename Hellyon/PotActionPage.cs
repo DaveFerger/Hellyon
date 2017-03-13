@@ -1,12 +1,13 @@
 using Android.App;
+using Android.Content;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
 
 namespace Hellyon
 {
-    [Activity(Label = "Pots")]
-    public class Pots : Activity
+    [Activity(Label = "Pot Action Page")]
+    public class PotActionPage : Activity
     {
         [Android.Runtime.Register("onBackPressed", "()V", "GetOnBackPressedHandler")]
         public override void OnBackPressed()
@@ -15,7 +16,7 @@ namespace Hellyon
             alert.SetTitle("Kilépés");
             alert.SetMessage("Biztosan ki akarsz lépni?");
             alert.SetPositiveButton("Igen", (senderAlert, args) => {
-                System.Environment.Exit(0);
+                Process.KillProcess(Process.MyPid());
             });
 
             alert.SetNegativeButton("Nem", (senderAlert, args) => {
@@ -30,7 +31,23 @@ namespace Hellyon
             base.OnCreate(savedInstanceState);
             RequestWindowFeature(WindowFeatures.NoTitle);
             // Create your application here
-            SetContentView(Resource.Layout.Pots);
+            SetContentView(Resource.Layout.PotActionPage);
+
+            Button pot1Btn = FindViewById<Button>(Resource.Id.pot1Button);
+            pot1Btn.Click += delegate
+            {
+                var intent = new Intent(this, typeof(Hellyon.OpenedPot));
+                try
+                {
+                    StartActivity(intent);
+                }
+                catch (System.Exception e)
+                {
+                    System.Console.WriteLine(e);
+                    throw;
+                }
+
+            };
         }
     }
 }

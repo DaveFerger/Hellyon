@@ -7,7 +7,7 @@ using Android.Content;
 namespace Hellyon
 {
     [Activity(Label = "Hellyon")]
-    public class MainActivity : Activity
+    public class MainPage : Activity
     {
         protected override void OnCreate(Bundle bundle)
         {
@@ -25,7 +25,7 @@ namespace Hellyon
             btn.Click += delegate {
                 if (username.Text == "admin" && password.Text == "admin")
                 {
-                    var intent = new Intent(this, typeof(Hellyon.Pots));
+                    var intent = new Intent(this, typeof(Hellyon.PotActionPage));
                     try
                     {
                         StartActivity(intent);
