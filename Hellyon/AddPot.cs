@@ -22,6 +22,22 @@ namespace Hellyon
 
             // Create your application here
             SetContentView(Resource.Layout.AddPot);
+
+            /*ImageButton imageButton1 = FindViewById<ImageButton>(Resource.Id.imageButton1);
+            imageButton1.Click += delegate
+            {
+                var intent = new Intent(this, typeof(Hellyon.AddImage));
+                try
+                {
+                    StartActivity(intent);
+                }
+                catch (System.Exception e)
+                {
+                    System.Console.WriteLine(e);
+                    throw;
+                }
+
+            }; */
         }
     }
 }

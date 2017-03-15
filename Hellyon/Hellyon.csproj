@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="AddPot.cs" />
     <Compile Include="BitmapHelper.cs" />
+    <Compile Include="AddImage.cs" />
     <Compile Include="OpenedPot.cs" />
     <Compile Include="PotActionPage.cs" />
     <Compile Include="MainPage.cs" />
@@ -80,6 +81,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\AddPot.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\AddImage.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

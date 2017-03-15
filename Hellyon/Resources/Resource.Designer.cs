@@ -72,29 +72,20 @@ namespace Hellyon
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f06001e
-			public const int actionsText = 2131099678;
+			// aapt resource value: 0x7f060018
+			public const int actionsText = 2131099672;
 			
-			// aapt resource value: 0x7f060020
-			public const int activePotsText = 2131099680;
+			// aapt resource value: 0x7f06001a
+			public const int activePotsText = 2131099674;
 			
-			// aapt resource value: 0x7f060014
-			public const int addFlowerImage = 2131099668;
+			// aapt resource value: 0x7f06000e
+			public const int addFlowerImage = 2131099662;
 			
-			// aapt resource value: 0x7f060015
-			public const int flowerImageView = 2131099669;
+			// aapt resource value: 0x7f06000f
+			public const int flowerImageView = 2131099663;
 			
 			// aapt resource value: 0x7f060002
 			public const int imageButton1 = 2131099650;
-			
-			// aapt resource value: 0x7f06000c
-			public const int imageButton10 = 2131099660;
-			
-			// aapt resource value: 0x7f06000d
-			public const int imageButton11 = 2131099661;
-			
-			// aapt resource value: 0x7f060009
-			public const int imageButton12 = 2131099657;
 			
 			// aapt resource value: 0x7f060003
 			public const int imageButton2 = 2131099651;
@@ -112,16 +103,7 @@ namespace Hellyon
 			public const int imageButton6 = 2131099655;
 			
 			// aapt resource value: 0x7f060008
-			public const int imageButton7 = 2131099656;
-			
-			// aapt resource value: 0x7f06000a
-			public const int imageButton8 = 2131099658;
-			
-			// aapt resource value: 0x7f06000b
-			public const int imageButton9 = 2131099659;
-			
-			// aapt resource value: 0x7f06000e
-			public const int imageView1 = 2131099662;
+			public const int imageView1 = 2131099656;
 			
 			// aapt resource value: 0x7f060000
 			public const int linearLayout1 = 2131099648;
@@ -129,59 +111,59 @@ namespace Hellyon
 			// aapt resource value: 0x7f060001
 			public const int linearLayout2 = 2131099649;
 			
-			// aapt resource value: 0x7f060013
-			public const int loginButton = 2131099667;
-			
-			// aapt resource value: 0x7f06001f
-			public const int newPotButton = 2131099679;
-			
-			// aapt resource value: 0x7f060012
-			public const int password = 2131099666;
-			
-			// aapt resource value: 0x7f060011
-			public const int passwordText = 2131099665;
-			
-			// aapt resource value: 0x7f060021
-			public const int pot1Button = 2131099681;
-			
-			// aapt resource value: 0x7f060022
-			public const int pot2Button = 2131099682;
-			
-			// aapt resource value: 0x7f060023
-			public const int pot3Button = 2131099683;
-			
-			// aapt resource value: 0x7f060024
-			public const int pot4Button = 2131099684;
-			
-			// aapt resource value: 0x7f060016
-			public const int tableLayout1 = 2131099670;
-			
-			// aapt resource value: 0x7f060017
-			public const int tableRow1 = 2131099671;
+			// aapt resource value: 0x7f06000d
+			public const int loginButton = 2131099661;
 			
 			// aapt resource value: 0x7f060019
-			public const int tableRow2 = 2131099673;
+			public const int newPotButton = 2131099673;
 			
-			// aapt resource value: 0x7f06001a
-			public const int tableRow3 = 2131099674;
+			// aapt resource value: 0x7f06000c
+			public const int password = 2131099660;
+			
+			// aapt resource value: 0x7f06000b
+			public const int passwordText = 2131099659;
 			
 			// aapt resource value: 0x7f06001b
-			public const int tableRow4 = 2131099675;
+			public const int pot1Button = 2131099675;
 			
 			// aapt resource value: 0x7f06001c
-			public const int tableRow5 = 2131099676;
+			public const int pot2Button = 2131099676;
 			
 			// aapt resource value: 0x7f06001d
-			public const int tableRow6 = 2131099677;
+			public const int pot3Button = 2131099677;
 			
-			// aapt resource value: 0x7f060018
-			public const int textView10 = 2131099672;
+			// aapt resource value: 0x7f06001e
+			public const int pot4Button = 2131099678;
 			
 			// aapt resource value: 0x7f060010
-			public const int userName = 2131099664;
+			public const int tableLayout1 = 2131099664;
 			
-			// aapt resource value: 0x7f06000f
-			public const int userNameText = 2131099663;
+			// aapt resource value: 0x7f060011
+			public const int tableRow1 = 2131099665;
+			
+			// aapt resource value: 0x7f060013
+			public const int tableRow2 = 2131099667;
+			
+			// aapt resource value: 0x7f060014
+			public const int tableRow3 = 2131099668;
+			
+			// aapt resource value: 0x7f060015
+			public const int tableRow4 = 2131099669;
+			
+			// aapt resource value: 0x7f060016
+			public const int tableRow5 = 2131099670;
+			
+			// aapt resource value: 0x7f060017
+			public const int tableRow6 = 2131099671;
+			
+			// aapt resource value: 0x7f060012
+			public const int textView10 = 2131099666;
+			
+			// aapt resource value: 0x7f06000a
+			public const int userName = 2131099658;
+			
+			// aapt resource value: 0x7f060009
+			public const int userNameText = 2131099657;
 			
 			static Id()
 			{

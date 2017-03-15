@@ -23,8 +23,8 @@ namespace Hellyon
             EditText password = FindViewById<EditText>(Resource.Id.password);
 
             btn.Click += delegate {
-                if (username.Text == "admin" && password.Text == "admin")
-                {
+                //if (username.Text == "admin" && password.Text == "admin")
+                //{
                     var intent = new Intent(this, typeof(Hellyon.PotActionPage));
                     try
                     {
@@ -35,11 +35,11 @@ namespace Hellyon
                         System.Console.WriteLine(e);
                         throw;
                     }
-                }
-                else
-                {
-                    Toast.MakeText(this, "Nem jó", ToastLength.Long).Show();
-                }
+                //}
+                //else
+                //{
+                //    Toast.MakeText(this, "Nem jó", ToastLength.Long).Show();
+                //}
             };   
         }
     }
