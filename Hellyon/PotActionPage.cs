@@ -48,6 +48,24 @@ namespace Hellyon
                 }
 
             };
+
+            Button newPotButton = FindViewById<Button>(Resource.Id.newPotButton);
+            newPotButton.Click += delegate
+            {
+                var intent = new Intent(this, typeof(Hellyon.AddPot));
+                try
+                {
+                    StartActivity(intent);
+                }
+                catch (System.Exception e)
+                {
+                    System.Console.WriteLine(e);
+                    throw;
+                }
+
+            };
+
+
         }
     }
 }
