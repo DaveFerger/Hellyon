@@ -88,14 +88,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddFlower.cs" />
     <Compile Include="AddPot.cs" />
     <Compile Include="BitmapHelper.cs" />
+    <Compile Include="Resources\ListViewAdapterForPots.cs" />
     <Compile Include="Resources\ListViewAdapter.cs" />
     <Compile Include="Resources\DataHelper\DataBase.cs" />
     <Compile Include="Resources\Model\Flower.cs" />
     <Compile Include="OpenedPot.cs" />
     <Compile Include="PotActionPage.cs" />
     <Compile Include="MainPage.cs" />
+    <Compile Include="Resources\Model\Pots.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SplashScreen.cs" />
@@ -112,10 +115,14 @@
     <AndroidResource Include="Resources\layout\OpenedPot.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\AddPot.axml">
+    <AndroidResource Include="Resources\layout\AddFlower.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\list_view_dataTemplate.axml" />
+    <AndroidResource Include="Resources\layout\AddPot.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\button_list_view_dataTemplate.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">

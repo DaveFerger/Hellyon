@@ -1,14 +1,23 @@
 using Android.App;
 using Android.Content;
 using Android.OS;
+using Android.Util;
 using Android.Views;
 using Android.Widget;
+using Hellyon.Resources;
+using Hellyon.Resources.DataHelper;
+using Hellyon.Resources.Model;
+using System.Collections.Generic;
 
 namespace Hellyon
 {
     [Activity(Label = "Pot Action Page")]
     public class PotActionPage : Activity
     {
+        ListView lstData;
+        List<Pots> lstSource = new List<Pots>();
+        DataBase db;
+
         [Android.Runtime.Register("onBackPressed", "()V", "GetOnBackPressedHandler")]
         public override void OnBackPressed()
         {
@@ -33,6 +42,15 @@ namespace Hellyon
             // Create your application here
             SetContentView(Resource.Layout.PotActionPage);
 
+
+            //Create DataBase
+            db = new DataBase();
+            db.createDataBase();
+            string folder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+            Log.Info("DB_PATH", folder);
+
+            lstData = FindViewById<ListView>(Resource.Id.lstPots);
+
             Button pot1Btn = FindViewById<Button>(Resource.Id.pot1Button);
             pot1Btn.Click += delegate
             {
@@ -55,7 +73,7 @@ namespace Hellyon
                 var intent = new Intent(this, typeof(Hellyon.AddPot));
                 try
                 {
-                    StartActivity(intent);
+                    StartActivityForResult(intent,0);
                 }
                 catch (System.Exception e)
                 {
@@ -64,7 +82,21 @@ namespace Hellyon
                 }
 
             };
+        }
+        protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
+        {
+            base.OnActivityResult(requestCode, resultCode, data);
+            if (resultCode == Result.Ok)
+            {
+                LoadData();
+            }
+        }
 
+        private void LoadData()
+        {
+            lstSource = db.selectTablePots();
+            var adapter = new ListViewAdapterForPots(this, lstSource);
+            lstData.Adapter = adapter;
         }
     }
 }

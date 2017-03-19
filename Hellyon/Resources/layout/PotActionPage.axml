@@ -40,28 +40,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/pot1Button" />
-    <Button
-        android:text="@string/Pot2"
-        android:background="@drawable/blue_button"
-        android:textColor="@android:color/white"
-        android:paddingTop="10dp"
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/pot2Button" />
-    <Button
-        android:text="@string/Pot3"
-        android:background="@drawable/blue_button"
-        android:textColor="@android:color/white"
-        android:paddingTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/pot3Button" />
-    <Button
-        android:text="@string/Pot4"
-        android:background="@drawable/blue_button"
-        android:textColor="@android:color/white"
-        android:paddingTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/pot4Button" />
+        android:layout_height="match_parent"
+        android:id="@+id/lstPots" />
 </LinearLayout>

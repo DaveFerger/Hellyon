@@ -112,5 +112,107 @@ namespace Hellyon.Resources.DataHelper
             }
         }
 
+        public bool createPotDataBase()
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "Pot.db")))
+                {
+                    connection.CreateTable<Pots>();
+                    return true;
+                }
+            }
+            catch (SQLiteException ex)
+            {
+                Log.Info("SQLiteEx", ex.Message);
+                return false;
+            }
+        }
+
+        public bool insertIntoTablePots(Pots pot)
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "Pot.db")))
+                {
+                    connection.Insert(pot);
+                    return true;
+                }
+            }
+            catch (SQLiteException ex)
+            {
+                Log.Info("SQLiteEx", ex.Message);
+                return false;
+            }
+        }
+
+        public List<Pots> selectTablePots()
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "Pot.db")))
+                {
+                    return connection.Table<Pots>().ToList();
+
+                }
+            }
+            catch (SQLiteException ex)
+            {
+                Log.Info("SQLiteEx", ex.Message);
+                return null;
+            }
+        }
+
+        public bool updateTablePots(Pots pot)
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "Pot.db")))
+                {
+                    connection.Query<Pots>("UPDATE Pots set PotName=?,pDescription=?, Where ID=?",
+                        pot.PotName, pot.pDescription, pot.pID);
+                    return true;
+                }
+            }
+            catch (SQLiteException ex)
+            {
+                Log.Info("SQLiteEx", ex.Message);
+                return false;
+            }
+        }
+
+        public bool deleteTablePots(Pots pot)
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "Pot.db")))
+                {
+                    connection.Delete(pot);
+                    return true;
+                }
+            }
+            catch (SQLiteException ex)
+            {
+                Log.Info("SQLiteEx", ex.Message);
+                return false;
+            }
+        }
+
+        public bool selectQueryTablePots(int Id)
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "Pot.db")))
+                {
+                    connection.Query<Pots>("SELECT * FROM Pots Where ID=?", Id);
+                    return true;
+                }
+            }
+            catch (SQLiteException ex)
+            {
+                Log.Info("SQLiteEx", ex.Message);
+                return false;
+            }
+        }
     }
 }
