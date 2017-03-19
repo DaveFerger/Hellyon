@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="300.0dp"
         android:id="@+id/imageView1" />
-    <TextView
+<!--<TextView
         android:text="@string/Username"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@android:color/white"
@@ -45,7 +45,7 @@
         android:paddingTop="10dp"
         android:inputType="textPassword"
         android:id="@+id/password"
-        android:password="true" />
+        android:password="true" /> -->
     <Button
         android:text="@string/Login"
         android:background="@drawable/blue_button"

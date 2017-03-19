@@ -19,8 +19,8 @@ namespace Hellyon
 
             Button btn = FindViewById<Button> (Resource.Id.loginButton);
 
-            EditText username = FindViewById<EditText> (Resource.Id.userName);
-            EditText password = FindViewById<EditText>(Resource.Id.password);
+            /*EditText username = FindViewById<EditText> (Resource.Id.userName);
+            EditText password = FindViewById<EditText>(Resource.Id.password); */
 
             btn.Click += delegate {
                 //if (username.Text == "admin" && password.Text == "admin")
