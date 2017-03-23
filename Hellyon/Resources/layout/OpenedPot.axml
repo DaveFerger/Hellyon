@@ -5,115 +5,136 @@
     android:layout_height="match_parent"
     android:minWidth="25px"
     android:minHeight="25px"
-    android:background="#00aeef"
-    android:id="@+id/linearLayout1">
-    <Button
-        android:text="Add Image"
-        android:background="@drawable/blue_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/addFlowerImage" />
-    <ImageView
-        android:src="@android:drawable/ic_menu_gallery"
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        android:layout_marginTop="20dp"
-        android:id="@+id/flowerImageView" />
-    <TableLayout
+    android:background="#00aeef">
+  <ScrollView
+      android:minWidth="25px"
+      android:minHeight="25px"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/scrollView1">
+    <LinearLayout
+        android:orientation="vertical"
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tableLayout1">
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout1">
+      <Button
+          android:text="Add Image"
+          android:background="@drawable/blue_button"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/addFlowerImage" />
+      <ImageView
+          android:src="@android:drawable/ic_menu_gallery"
+          android:layout_width="wrap_content"
+          android:layout_height="200dp"
+          android:layout_marginTop="20dp"
+          android:id="@+id/flowerImageView" />
+      <TableLayout
+          android:minWidth="25px"
+          android:minHeight="25px"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/tableLayout1">
         <TableRow
             android:id="@+id/tableRow1"
             android:layout_marginTop="10dp">
-            <ImageView
-                android:src="@android:drawable/ic_menu_gallery"
-                android:layout_column="0"
-                android:id="@+id/imageView1" />
-            <TextView
-                android:text="Large Text"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_column="1"
-                android:id="@+id/textView10"
-                android:gravity="center"
-                android:layout_width="match_parent" />
+          <ImageView
+              android:src="@android:drawable/ic_menu_gallery"
+              android:id="@+id/imageView1" />
+          <TextView
+              android:text="Large Text"
+              android:textAppearance="?android:attr/textAppearanceLarge"
+              android:id="@+id/tvLight"
+              android:gravity="center"
+              android:layout_width="match_parent" />
         </TableRow>
         <TableRow
             android:id="@+id/tableRow2"
             android:layout_marginTop="10dp">
-            <ImageView
-                android:src="@android:drawable/ic_menu_gallery"
-                android:layout_column="0"
-                android:id="@+id/imageView1" />
-            <TextView
-                android:text="Large Text"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_column="1"
-                android:id="@+id/textView10"
-                android:gravity="center"
-                android:layout_width="match_parent" />
+          <ImageView
+              android:src="@android:drawable/ic_menu_gallery"
+              android:id="@+id/imageView1" />
+          <TextView
+              android:text="Large Text"
+              android:textAppearance="?android:attr/textAppearanceLarge"
+              android:id="@+id/tvwaterlevel"
+              android:gravity="center"
+              android:layout_width="match_parent" />
         </TableRow>
         <TableRow
             android:id="@+id/tableRow3"
             android:layout_marginTop="10dp">
-            <ImageView
-                android:src="@android:drawable/ic_menu_gallery"
-                android:layout_column="0"
-                android:id="@+id/imageView1" />
-            <TextView
-                android:text="Large Text"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_column="1"
-                android:id="@+id/textView10"
-                android:gravity="center"
-                android:layout_width="match_parent" />
+          <ImageView
+              android:src="@android:drawable/ic_menu_gallery"
+              android:id="@+id/imageView1" />
+          <TextView
+              android:text="Large Text"
+              android:textAppearance="?android:attr/textAppearanceLarge"
+              android:id="@+id/tvtempature"
+              android:gravity="center"
+              android:layout_width="match_parent" />
         </TableRow>
         <TableRow
             android:id="@+id/tableRow4"
             android:layout_marginTop="10dp">
-            <ImageView
-                android:src="@android:drawable/ic_menu_gallery"
-                android:layout_column="0"
-                android:id="@+id/imageView1" />
-            <TextView
-                android:text="Large Text"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_column="1"
-                android:id="@+id/textView10"
-                android:gravity="center"
-                android:layout_width="match_parent" />
+          <ImageView
+              android:src="@android:drawable/ic_menu_gallery"
+              android:id="@+id/imageView1" />
+          <TextView
+              android:text="Large Text"
+              android:textAppearance="?android:attr/textAppearanceLarge"
+              android:id="@+id/tvpressure"
+              android:gravity="center"
+              android:layout_width="match_parent" />
         </TableRow>
         <TableRow
             android:id="@+id/tableRow5"
             android:layout_marginTop="10dp">
-            <ImageView
-                android:src="@android:drawable/ic_menu_gallery"
-                android:layout_column="0"
-                android:id="@+id/imageView1" />
-            <TextView
-                android:text="Large Text"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_column="1"
-                android:id="@+id/textView10"
-                android:gravity="center"
-                android:layout_width="match_parent" />
+          <ImageView
+              android:src="@android:drawable/ic_menu_gallery"
+              android:id="@+id/imageView1" />
+          <TextView
+              android:text="Large Text"
+              android:textAppearance="?android:attr/textAppearanceLarge"
+              android:id="@+id/tvmoisture"
+              android:gravity="center"
+              android:layout_width="match_parent" />
         </TableRow>
         <TableRow
             android:id="@+id/tableRow6"
             android:layout_marginTop="10dp">
-            <ImageView
-                android:src="@android:drawable/ic_menu_gallery"
-                android:layout_column="0"
-                android:id="@+id/imageView1" />
-            <TextView
-                android:text="Large Text"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_column="1"
-                android:id="@+id/textView10"
-                android:gravity="center"
-                android:layout_width="match_parent" />
+          <ImageView
+              android:src="@android:drawable/ic_menu_gallery"
+              android:id="@+id/imageView1" />
+          <TextView
+              android:text="Large Text"
+              android:textAppearance="?android:attr/textAppearanceLarge"
+              android:id="@+id/tvhumidity"
+              android:gravity="center"
+              android:layout_width="match_parent" />
         </TableRow>
-    </TableLayout>
+      </TableLayout>
+      <Button
+          android:text="Frissítés"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/btnReload" />
+      <TextView
+          android:text="Large Text"
+          android:textAppearance="?android:attr/textAppearanceLarge"
+          android:id="@+id/tvflowername"
+          android:gravity="center"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+      <TextView
+          android:text="Large Text"
+          android:textAppearance="?android:attr/textAppearanceLarge"
+          android:id="@+id/tvpotkey"
+          android:gravity="center"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+    </LinearLayout>
+  </ScrollView>
 </LinearLayout>

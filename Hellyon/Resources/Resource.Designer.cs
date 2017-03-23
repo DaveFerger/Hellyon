@@ -72,17 +72,17 @@ namespace Hellyon
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f06002b
-			public const int actionsText = 2131099691;
+			// aapt resource value: 0x7f060034
+			public const int actionsText = 2131099700;
 			
-			// aapt resource value: 0x7f06002d
-			public const int activePotsText = 2131099693;
+			// aapt resource value: 0x7f060036
+			public const int activePotsText = 2131099702;
 			
 			// aapt resource value: 0x7f060010
 			public const int addFlowerForPot = 2131099664;
 			
-			// aapt resource value: 0x7f060021
-			public const int addFlowerImage = 2131099681;
+			// aapt resource value: 0x7f060022
+			public const int addFlowerImage = 2131099682;
 			
 			// aapt resource value: 0x7f06000a
 			public const int btnAdd = 2131099658;
@@ -92,6 +92,9 @@ namespace Hellyon
 			
 			// aapt resource value: 0x7f06000b
 			public const int btnEdit = 2131099659;
+			
+			// aapt resource value: 0x7f060031
+			public const int btnReload = 2131099697;
 			
 			// aapt resource value: 0x7f060012
 			public const int createNewPot = 2131099666;
@@ -120,8 +123,8 @@ namespace Hellyon
 			// aapt resource value: 0x7f060005
 			public const int edtWaterLevel = 2131099653;
 			
-			// aapt resource value: 0x7f060022
-			public const int flowerImageView = 2131099682;
+			// aapt resource value: 0x7f060023
+			public const int flowerImageView = 2131099683;
 			
 			// aapt resource value: 0x7f06001f
 			public const int imageView1 = 2131099679;
@@ -138,14 +141,14 @@ namespace Hellyon
 			// aapt resource value: 0x7f060020
 			public const int loginButton = 2131099680;
 			
-			// aapt resource value: 0x7f06002f
-			public const int lstPots = 2131099695;
+			// aapt resource value: 0x7f060038
+			public const int lstPots = 2131099704;
 			
-			// aapt resource value: 0x7f06002c
-			public const int newPotButton = 2131099692;
+			// aapt resource value: 0x7f060035
+			public const int newPotButton = 2131099701;
 			
-			// aapt resource value: 0x7f06002e
-			public const int pot1Button = 2131099694;
+			// aapt resource value: 0x7f060037
+			public const int pot1Button = 2131099703;
 			
 			// aapt resource value: 0x7f06000f
 			public const int potKey = 2131099663;
@@ -153,32 +156,56 @@ namespace Hellyon
 			// aapt resource value: 0x7f06000e
 			public const int potName = 2131099662;
 			
-			// aapt resource value: 0x7f060023
-			public const int tableLayout1 = 2131099683;
+			// aapt resource value: 0x7f060021
+			public const int scrollView1 = 2131099681;
 			
 			// aapt resource value: 0x7f060024
-			public const int tableRow1 = 2131099684;
+			public const int tableLayout1 = 2131099684;
 			
-			// aapt resource value: 0x7f060026
-			public const int tableRow2 = 2131099686;
+			// aapt resource value: 0x7f060025
+			public const int tableRow1 = 2131099685;
 			
 			// aapt resource value: 0x7f060027
-			public const int tableRow3 = 2131099687;
-			
-			// aapt resource value: 0x7f060028
-			public const int tableRow4 = 2131099688;
+			public const int tableRow2 = 2131099687;
 			
 			// aapt resource value: 0x7f060029
-			public const int tableRow5 = 2131099689;
+			public const int tableRow3 = 2131099689;
 			
-			// aapt resource value: 0x7f06002a
-			public const int tableRow6 = 2131099690;
+			// aapt resource value: 0x7f06002b
+			public const int tableRow4 = 2131099691;
+			
+			// aapt resource value: 0x7f06002d
+			public const int tableRow5 = 2131099693;
+			
+			// aapt resource value: 0x7f06002f
+			public const int tableRow6 = 2131099695;
 			
 			// aapt resource value: 0x7f060011
 			public const int textView1 = 2131099665;
 			
-			// aapt resource value: 0x7f060025
-			public const int textView10 = 2131099685;
+			// aapt resource value: 0x7f060026
+			public const int tvLight = 2131099686;
+			
+			// aapt resource value: 0x7f060032
+			public const int tvflowername = 2131099698;
+			
+			// aapt resource value: 0x7f060030
+			public const int tvhumidity = 2131099696;
+			
+			// aapt resource value: 0x7f06002e
+			public const int tvmoisture = 2131099694;
+			
+			// aapt resource value: 0x7f060033
+			public const int tvpotkey = 2131099699;
+			
+			// aapt resource value: 0x7f06002c
+			public const int tvpressure = 2131099692;
+			
+			// aapt resource value: 0x7f06002a
+			public const int tvtempature = 2131099690;
+			
+			// aapt resource value: 0x7f060028
+			public const int tvwaterlevel = 2131099688;
 			
 			// aapt resource value: 0x7f060018
 			public const int txtDesc = 2131099672;
