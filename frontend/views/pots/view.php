@@ -45,6 +45,8 @@ $this->params['breadcrumbs'][] = $this->title;
     ]) ?>
 
     <?php
+
+    // TODO pots_history tábla, feltöltöd adatokkal kézzel, majd itt a data leszívja és megjeleníti, a nézetig
         echo ChartJs::widget([
             'type' => 'line',
             'options' => [

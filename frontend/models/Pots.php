@@ -41,9 +41,9 @@ class Pots extends \yii\db\ActiveRecord
             [['flower_name', 'flower_desc', 'flower_light', 'flower_waterlevel', 'flower_temp', 'flower_pressure', 'flower_moisture', 'flower_humidity', 'flower_created_date', 'flower_last_used_date', 'pot_name'], 'required'],
             [['flower_desc'], 'string'],
             [['flower_light', 'flower_waterlevel', 'flower_temp', 'flower_pressure', 'flower_moisture', 'flower_humidity'], 'integer'],
-            [['flower_created_date', 'flower_last_used_date'], 'safe'],
+            [['flower_created_date', 'flower_last_used_date'], 'safe'], // TODO legyen automatikus elmentve, behavior teszt
             [['flower_name', 'pot_name'], 'string', 'max' => 100],
-            [['flower_name'], 'unique'],
+            [['flower_name'], 'unique'], // TODO legyen id, úgy, mint a pot_name, dropdown az űrlapban és ArrayHelper::map()
             [['pot_name'], 'exist', 'skipOnError' => true, 'targetClass' => Potdb::className(), 'targetAttribute' => ['pot_name' => 'name']],
         ];
     }
@@ -76,4 +76,5 @@ class Pots extends \yii\db\ActiveRecord
     {
         return $this->hasOne(Potdb::className(), ['name' => 'pot_name']);
     }
+
 }

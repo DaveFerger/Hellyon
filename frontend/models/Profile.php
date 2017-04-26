@@ -62,4 +62,6 @@ class Profile extends \yii\db\ActiveRecord
             'updated_at' => 'Updated At',
         ];
     }
+
+    //TODO getter $model->fullName
 }
