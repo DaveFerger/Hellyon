@@ -63,5 +63,9 @@ class Profile extends \yii\db\ActiveRecord
         ];
     }
 
-    //TODO getter $model->fullName
+    //TODO getter $model->fullName - ?
+    /*public function getFullName()
+    {
+        return $this->'firstname';
+    } */
 }

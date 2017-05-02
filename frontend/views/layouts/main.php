@@ -258,6 +258,7 @@ AppAsset::register($this);
                 <li><a href="index.php?r=flowerdb"><i class="fa fa-link"></i> <span>FlowerDB</span></a></li>
                 <li><a href="index.php?r=potdb"><i class="fa fa-link"></i> <span>PotDB</span></a></li>
                 <li><a href="index.php?r=pots"><i class="fa fa-link"></i> <span>Pots</span></a></li>
+                <li><a href="index.php?r=potshistory"><i class="fa fa-link"></i> <span>Pots History</span></a></li>
                 <li>
                     <?php
                     if (Yii::$app->user->isGuest) {

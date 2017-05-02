@@ -4,6 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use yii\helpers\ArrayHelper;
 use app\models\Potdb;
+use app\models\Flowerdb;
 use yii\widgets\Pjax;
 
 /* @var $this yii\web\View */
@@ -16,7 +17,10 @@ use yii\widgets\Pjax;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'flower_name')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'flower_name')->dropDownList(
+        ArrayHelper::map(Flowerdb::find()->all(), 'name', 'name'),
+        ['prompt'=>'Select Flower']
+    ) ?>
 
     <?= $form->field($model, 'flower_desc')->textarea(['rows' => 6]) ?>
 

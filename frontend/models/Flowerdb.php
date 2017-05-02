@@ -20,6 +20,8 @@ class Flowerdb extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
+    public $file;
+
     public static function tableName()
     {
         return 'flowerdb';
@@ -31,10 +33,11 @@ class Flowerdb extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'description', 'temp', 'light', 'water', 'location'], 'required'],
+            [['name', 'description', 'temp', 'light', 'water', 'location', 'image'], 'required'],
             [['description', 'light', 'water', 'location'], 'string'],
             [['temp'], 'integer'],
-            [['name'], 'string', 'max' => 100],
+            [['name', 'image'], 'string', 'max' => 100],
+            [['file'], 'file'],
         ];
     }
 
@@ -50,6 +53,7 @@ class Flowerdb extends \yii\db\ActiveRecord
             'temp' => 'Temp',
             'light' => 'Light',
             'water' => 'Water',
+            'file' => 'Image',
             'location' => 'Location',
         ];
     }

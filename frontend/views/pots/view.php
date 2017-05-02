@@ -45,7 +45,6 @@ $this->params['breadcrumbs'][] = $this->title;
     ]) ?>
 
     <?php
-
     // TODO pots_history tábla, feltöltöd adatokkal kézzel, majd itt a data leszívja és megjeleníti, a nézetig
         echo ChartJs::widget([
             'type' => 'line',
@@ -58,7 +57,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'datasets' => [
                     [
                         'label'=> 'Light',
-                        'backgroundColor' => "rgba(0, 255, 0, 1)",
+                        'backgroundColor' => "rgba(255, 255, 0, 1)",
                         'borderColor' => "rgba(179,181,198,1)",
                         'pointBackgroundColor' => "rgba(179,181,198,1)",
                         'pointBorderColor' => "#fff",
@@ -143,7 +142,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'datasets' => [
                     [
                         'label'=> 'Moisture',
-                        'backgroundColor' => "rgba(255, 255, 0, 1)",
+                        'backgroundColor' => "rgba(0, 255, 0, 1)",
                         'borderColor' => "rgba(179,181,198,1)",
                         'pointBackgroundColor' => "rgba(179,181,198,1)",
                         'pointBorderColor' => "#fff",

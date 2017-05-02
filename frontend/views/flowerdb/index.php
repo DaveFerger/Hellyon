@@ -41,6 +41,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'temp',
                 'light',
                 'water',
+                'image',
                 'location',
 
                 ['class' => 'yii\grid\ActionColumn'],

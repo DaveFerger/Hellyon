@@ -8,6 +8,7 @@ use frontend\models\FlowerdbSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * FlowerdbController implements the CRUD actions for Flowerdb model.
@@ -65,7 +66,13 @@ class FlowerdbController extends Controller
     {
         $model = new Flowerdb();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post())) {
+
+            $imageName = $model->name;
+            $model->file = UploadedFile::getInstance($model, 'file');
+            $model->file->saveAs( 'uploads/'.$imageName.'.'.$model->file->extension );
+            $model->image = 'uploads/'.$imageName.'.'.$model->file->extension ;
+            $model->save();
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
