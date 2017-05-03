@@ -29,8 +29,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'flower_waterlevel',
             'flower_temp',
             'flower_pressure',
-            // 'flower_moisture',
-            // 'flower_humidity',
+             'flower_moisture',
+            'flower_humidity',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

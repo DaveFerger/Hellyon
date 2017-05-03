@@ -65,9 +65,9 @@ class PotsController extends Controller
     {
         $model = new Pots();
 
-        if ($model->load(Yii::$app->request->post())) {
-            $model->flower_created_date = date('Y-m-d h:m');
-            $model->flower_last_used_date = date('Y-m-d h:m');
+        if ($model->load(Yii::$app->request->post()) ) {
+            //$model->flower_created_date = date('Y-m-d h:m');
+            //$model->flower_last_used_date = date('Y-m-d h:m');
             $model->save();
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
@@ -88,7 +88,7 @@ class PotsController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post())) {
-            $model->flower_last_used_date = date('Y-m-d h:m');
+            //$model->flower_last_used_date = date('Y-m-d h:m');
             $model->save();
             return $this->redirect(['view', 'id' => $model->id]);
         } else {

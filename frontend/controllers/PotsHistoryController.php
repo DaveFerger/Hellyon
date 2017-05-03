@@ -2,9 +2,9 @@
 
 namespace frontend\controllers;
 
+use frontend\models\PotsHistorySearch;
 use Yii;
-use app\models\PotsHistory;
-use app\models\PotsHistorySearch;
+use frontend\models\PotsHistory;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;

@@ -3,6 +3,8 @@
 namespace app\models;
 
 use Yii;
+use yii\behaviors\TimestampBehavior;
+use yii\db\Expression;
 
 /**
  * This is the model class for table "pots".
@@ -75,5 +77,17 @@ class Pots extends \yii\db\ActiveRecord
     public function getPotName()
     {
         return $this->hasOne(Potdb::className(), ['name' => 'pot_name']);
+    }
+
+    public function behaviors()
+    {
+        return [
+            [
+                'class' => TimestampBehavior::className(),
+                'createdAtAttribute' => 'flower_created_date',
+                'updatedAtAttribute' => 'flower_last_used_date',
+                'value' => new Expression('NOW()'),
+            ],
+        ];
     }
 }
