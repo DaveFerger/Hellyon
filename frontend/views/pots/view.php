@@ -1,5 +1,6 @@
 <?php
 
+use frontend\models\PotsHistory;
 use yii\helpers\Html;
 use yii\widgets\DetailView;
 use dosamigos\chartjs\ChartJs;
@@ -45,15 +46,33 @@ $this->params['breadcrumbs'][] = $this->title;
     ]) ?>
 
     <?php
+
+    /*function array_values_recursive($array) {
+        $flat = array();
+
+        foreach($array as $value) {
+            if (is_array($value)) {
+                $flat = array_merge($flat, array_values_recursive($value));
+            }
+            else {
+                $flat[] = $value;
+            }
+        }
+        return $flat;
+    } */
+
+
+
     // TODO pots_history tábla, feltöltöd adatokkal kézzel, majd itt a data leszívja és megjeleníti, a nézetig
-        echo ChartJs::widget([
+    $lightChartData = PotsHistory::getLightFromDate();
+    echo ChartJs::widget([
             'type' => 'line',
             'options' => [
                 'height' => 200,
                 'width' => 1500,
             ],
             'data' => [
-                'labels' => ["Monday", "Thusday", "Wendnesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                'labels' => $lightChartData['labels'],
                 'datasets' => [
                     [
                         'label'=> 'Light',
@@ -63,11 +82,15 @@ $this->params['breadcrumbs'][] = $this->title;
                         'pointBorderColor' => "#fff",
                         'pointHoverBackgroundColor' => "#fff",
                         'pointHoverBorderColor' => "rgba(179,181,198,1)",
-                        'data' => [10, 0, 30, 0, 50, 0, 70]
+                        'data' => $lightChartData['data']
                     ]
                 ]
             ],
         ]);
+
+        //print_r(PotsHistory::getLightFromDate((new DateTime('7 days ago'))->format('Y-m-d H:i:s')));
+        //echo print_r(PotsHistory::getLightFromDate(date('Y-m-d')));
+        //echo print_r((new DateTime('1 days ago'))->format('Y-m-d H:i:s'));
         echo ChartJs::widget([
             'type' => 'line',
             'options' => [

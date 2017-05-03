@@ -22,6 +22,8 @@ use yii\widgets\Pjax;
         ['prompt'=>'Select Flower']
     ) ?>
 
+    <?= $form->errorSummary($model) ?>
+
     <?= $form->field($model, 'flower_desc')->textarea(['rows' => 6]) ?>
 
     <?= $form->field($model, 'flower_light')->textInput() ?>

@@ -3,6 +3,8 @@
 namespace frontend\models;
 
 use Yii;
+use yii\behaviors\TimestampBehavior;
+use yii\db\Expression;
 
 /**
  * This is the model class for table "pots_history".
@@ -50,5 +52,38 @@ class PotsHistory extends \yii\db\ActiveRecord
             'flower_moisture' => 'Flower Moisture',
             'flower_humidity' => 'Flower Humidity',
         ];
+    }
+
+    public function behaviors()
+    {
+        return [
+            [
+                'class' => TimestampBehavior::className(),
+                'createdAtAttribute' => false,
+                'updatedAtAttribute' => 'flower_date',
+                'value' => new Expression('NOW()'),
+            ],
+        ];
+    }
+
+    public static function getLightFromDate($date = null) {
+        if ($date == null)
+            $date = (new \DateTime('7 days ago'))->format('Y-m-d H:i:s');
+
+        $query = static::find()
+            ->select('flower_light')
+            ->where(['>=','flower_date', $date])
+            ->asArray()
+            ->all();
+        $data = [];
+
+        foreach ($query as $k => $i)
+            $data = array_merge($data, array_values($i));
+
+
+
+
+
+        return ['data' => $data, 'labels' => ['szerda', 'csütörtök']];
     }
 }
