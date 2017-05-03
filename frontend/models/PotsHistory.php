@@ -67,8 +67,10 @@ class PotsHistory extends \yii\db\ActiveRecord
     }
 
     public static function getLightFromDate($date = null) {
-        if ($date == null)
+        if ($date == null){
             $date = (new \DateTime('7 days ago'))->format('Y-m-d H:i:s');
+            $labels[] = date('l', strtotime($date));
+        }
 
         $query = static::find()
             ->select('flower_light')
@@ -84,6 +86,6 @@ class PotsHistory extends \yii\db\ActiveRecord
 
 
 
-        return ['data' => $data, 'labels' => ['szerda', 'csütörtök']];
+        return ['data' => $data, 'labels' => $labels];
     }
 }
